@@ -1,0 +1,50 @@
+body{
+  background: #d3d3d3;
+}
+
+h1{
+  color:white;
+}
+
+h3 {
+  color:purple;
+}
+
+
+.box {
+
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #fff;
+  border-radius: 2px;
+  height: 115px;
+  margin: 1rem;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+}
+
+.box1 {
+      background: #fff;
+      border-radius: 2px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.btn{
+  margin-left: 15px;
+  border-radius: 0px;
+}
+
+.btn-primary {
+    background: #4B0082;
+    color: white;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background: #72587F;
+}
+

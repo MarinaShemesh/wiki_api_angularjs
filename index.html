@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app='wikiApp'>
+<head>
+  <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Wikipedia search</title>
+</head>
+<body>
+  <div class="container" ng-controller="wikiController as vm">
+   <h1 class="text-center">Wikipedia search</h1> 
+
+    <div class="box1" >
+      <input id="input" type ="text" ng-model="searchText" name ="searchText" placeholder="Search Wikipedia">
+      <button type="button" class="btn btn-primary" ng-click="search(searchText)">Search Wikipedia</button>
+
+
+        <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"
+           class = "btn btn-primary">Get a Random Wiki </a>
+    
+    </div>
+
+    <div class="box" ng-repeat="foo in results">
+      <h3>{{foo.title}}</h3>
+      <p>{{foo.extract}}</p>
+      <!--  <img ng-src="{{foo.thumbnail.source}}"/> -->
+
+    </div>
+     
+    <div>
+      <br>
+        <footer>Created by <a href ="https://www.linkedin.com/in/marina-shemesh-98133311/" target="_blank">Marina Shemesh</a></footer>
+     <br>
+   </div>
+
+  </div>
+
+
+
+
+</body>
+   <script src="js/angular.min.js"></script>
+   <script src="js/app.js"></script>
+   <script src="js/controller/wikiController.js"></script>
+</html>
